@@ -1,0 +1,33 @@
+﻿@model  GamesJournal.Models.Player
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit User Info</h2>
+
+<a href="/Player/List">Return to User List</a>
+
+<div>
+    Current Username: @Model.Username
+</div>
+
+<form action="/Player/Update/@Model.PlayerId" method="POST">
+
+    <input type="text" style="display:none;" name="PlayerId" value="@Model.PlayerId" />
+
+    <div>
+        <label>Username:</label> <input type="text" name="Username" />
+    </div>
+
+    <div>
+        <label>Date:</label> <input type="datetime" name="UserCreationDate" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update User" />
+    </div>
+</form>
+
+
+

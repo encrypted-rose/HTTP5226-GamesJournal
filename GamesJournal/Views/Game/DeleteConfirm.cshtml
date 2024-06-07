@@ -1,0 +1,23 @@
+﻿@model  GamesJournal.Models.Game
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete this Game?</h2>
+
+<a href="/game/List">Cancel</a>
+
+<h3>@Model.GameTitle</h3>
+
+<div>
+    <div>@Model.GamePublisher</div>
+    <div>@Model.GameRating</div>
+</div>
+
+<form action="/Game/Delete/@Model.GameId" method="POST">
+    <input type="submit" value="Confirm Delete" />
+
+</form>
+
+

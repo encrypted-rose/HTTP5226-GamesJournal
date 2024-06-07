@@ -1,0 +1,39 @@
+﻿@model GamesJournal.Models.JournalEntryDto
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Journal Entry</h2>
+
+<a href="/Journal/List">Return to Entry List</a>
+
+<form action="/Journal/Update/@Model.JournalEntryId" method="POST">
+
+    <input type="text" style="display:none;" name="GameId" value="@Model.JournalEntryId" />
+
+    <div>
+        <label>Entry Title:</label> <input type="text" name="JournalEntryTitle" />
+    </div>
+
+    <div>
+        <label>Entry:</label> <input type="text" name="JournalEntry" />
+    </div>
+
+    <div>
+        <label>EntryDate:</label> <input type="datetime" name="EntryDate" />
+    </div>
+
+    <div>
+        <label>Game ID:</label> <input type="number" name="GameiId" />
+    </div>
+
+    <div>
+        <label>Username ID:</label> <input type="number" name="PlayerId" />
+    </div>
+
+
+    <div>
+        <input type="submit" value="Update Entry" />
+    </div>
+</form>

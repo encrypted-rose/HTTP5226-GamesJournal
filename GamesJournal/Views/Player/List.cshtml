@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GamesJournal.Models.Player>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Users</h2>
+
+<a href="/Player/New">Add a New User</a>
+
+@foreach (var player in Model)
+{
+    <div>
+        <h2><a href="/Player/Details/@player.PlayerId">@player.Username</a></h2>
+    </div>
+
+}
+

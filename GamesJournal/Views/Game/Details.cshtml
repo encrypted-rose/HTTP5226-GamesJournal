@@ -1,0 +1,19 @@
+﻿@model GamesJournal.Models.Game
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Game Information</h2>
+
+<div><a href="/Game/Edit/@Model.GameId">Edit Game Info</a></div>
+<div><a href="/Game/DeleteConfirm/@Model.GameId">Delete Game</a></div>
+<a href="/Game/List">Return to Game Library</a>
+
+<div>
+    <h3>@Model.GameTitle</h3>
+    <div>Publisher: @Model.GamePublisher</div>
+    <div>Description: @Model.GamePlot</div>
+</div>
+
+

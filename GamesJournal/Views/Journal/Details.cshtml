@@ -1,0 +1,18 @@
+﻿@model GamesJournal.Models.JournalEntryDto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Journal Entry</h2>
+
+<div><a href="/Journal/Edit/@Model.JournalEntryId">Edit Journal Entry</a></div>
+<div><a href="/Journal/DeleteConfirm/@Model.JournalEntryId">Delete Entry</a></div>
+<a href="/Journal/List">Return to Entries List</a>
+
+<div>
+    <h3>@Model.JournalEntryTitle</h3>
+    <div>Entry: @Model.JournalEntry</div>
+    <div>Date: @Model.EntryDate</div>
+</div>
+

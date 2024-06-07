@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Add New User</h2>
+
+<a href="/Player/List">Return to Player list</a>
+
+<form action="/Player/Create" method="POST">
+    <div>
+        <label>Username:</label> <input type="text" name="Username" />
+    </div>
+
+    <div>
+        <label>Date Created:</label> <input type="datetime" name="UserCreationDate" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add User" />
+    </div>
+</form>
+

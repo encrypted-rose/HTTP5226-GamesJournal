@@ -1,0 +1,17 @@
+﻿@model IEnumerable<GamesJournal.Models.Game>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Games</h2>
+
+<a href="/Game/New">Add a Game</a>
+
+@foreach (var game in Model)
+{
+    <div>
+        <h2><a href="/Game/Details/@game.GameId">@game.GameTitle</a></h2>
+        <h4>Rating: @game.GameRating / 10</h4>
+    </div>
+
+}

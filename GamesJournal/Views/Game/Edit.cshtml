@@ -1,0 +1,35 @@
+﻿@model  GamesJournal.Models.Game
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Game Info</h2>
+
+<a href="/Game/List">Return to Game Library</a>
+
+<form action="/Game/Update/@Model.GameId" method="POST">
+
+    <input type="text" style="display:none;" name="GameId" value="@Model.GameId" />
+
+    <div>
+        <label>Game Title:</label> <input type="text" name="GameTitle" />
+    </div>
+
+    <div>
+        <label>Game Publisher:</label> <input type="text" name="GamePublisher" />
+    </div>
+
+    <div>
+        <label>Game Rating (1-10):</label> <input type="number" name="GameRating" />
+    </div>
+
+    <div>
+        <label>Game Description:</label> <input type="text" name="GamePlot" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update Game" />
+    </div>
+</form>
+

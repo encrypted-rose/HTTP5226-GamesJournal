@@ -1,0 +1,19 @@
+﻿@model IEnumerable<GamesJournal.Models.JournalEntryDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Journal entries</h2>
+
+<a href="/Journal/New">Add a New Entry</a>
+
+@foreach (var journal in Model)
+{
+    <div>
+        <h2><a href="/Journal/Details/@journal.JournalEntryId">@journal.JournalEntryTitle</a></h2>
+        <div>Game: @journal.GameTitle</div>
+        <div>User: @journal.Username</div>
+    </div>
+
+}
+

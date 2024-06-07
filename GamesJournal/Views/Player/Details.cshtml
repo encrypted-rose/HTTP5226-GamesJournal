@@ -1,0 +1,16 @@
+﻿@model GamesJournal.Models.Player
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Username Details</h2>
+
+<div><a href="/Player/Edit/@Model.PlayerId">Edit User Info</a></div>
+<div><a href="/Player/DeleteConfirm/@Model.PlayerId">Delete User</a></div>
+<a href="/Player/List">Return to Users List</a>
+
+<div>
+    <h3>@Model.Username</h3>
+    <div>Date Created: @Model.UserCreationDate</div>
+</div>
