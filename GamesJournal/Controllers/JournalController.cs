@@ -72,6 +72,9 @@ namespace GamesJournal.Controllers
         // GET: Journal/New
         public ActionResult New()
         {
+
+            //Display information about the games and players in the system to showcase as a list. Due to time constrains and a few attempts, that broke the code I was not able to complete this. Reverted back to previous version.
+
             return View();
         }
 
