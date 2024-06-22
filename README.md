@@ -15,4 +15,4 @@ Game Journal was born of an idea. Going through Instagram I found an account of 
 
 ## Comments:
 
-Currently, due to time constrains and unknown errors the features on the to-be-added list have not been implemented.
+Currently, due to time constrains and unknown errors the features on the to-be-added list have not been implemented. The App had to be reverted to it's initial iteration and it'll be worked in the future.
